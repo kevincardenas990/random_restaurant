@@ -66,7 +66,6 @@ class Food():
         else:
             return random.choice(self.dict_restaurants[genre])
 
-
 Need_To_Go = [
 
 

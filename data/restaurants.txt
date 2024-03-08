@@ -1,0 +1,20 @@
+jap:Tamashi Ramen
+koe:Cupbop
+jap:Yamato Japanese Cuisine
+jap:Asa Ramen
+ame:Noodles & Company
+fus:Zaos
+ita:Olive Garden
+ame:I-Hop
+fus:Guru's
+ame:J-Dawgs
+fus:Mo-Bettahs
+koe:KoKo Lunchbox
+ame:Good Move Cafe
+ame:Chuck-A-Rama
+piz:Dominos
+mex:Mariscos Los Chinchorros
+koe:Ombu
+koe:Yummy's
+ame:Tru Religion
+ame:McD'

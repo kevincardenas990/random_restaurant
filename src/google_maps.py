@@ -20,7 +20,7 @@ class Gdirections():
 
     def get_raw_data(self, mode="driving"):
         print(self._start, self._end)
-        if self._start is None or self._end is None:
+        if self._start is None or  self._end is None:
             return None
         
         data = self.gmaps.directions(self._start, self._end, mode=mode, departure_time=self.start_time)
