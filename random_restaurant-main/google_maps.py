@@ -5,7 +5,7 @@ from constants import KEY
 
 from constants import KEY
 
-class Gdirections():
+class G_Directions():
     def __init__(self, start=None, end=None) -> None:    
         self.gmaps = googlemaps.Client(KEY)
         self._start = start
@@ -15,7 +15,7 @@ class Gdirections():
 
 
     def get_current_location(self):
-        '''Unsure how you'd be able to'''
+        '''Request Info'''
         pass
 
     def get_raw_data(self, mode="driving"):
@@ -64,6 +64,6 @@ class Gdirections():
 
 
 if __name__ == "__main__":
-    direction = Gdirections("818 E 500 S American Fork", "1001 Campus Dr Orem")
+    direction = G_Directions("818 E 500 S American Fork", "1001 Campus Dr Orem")
     direction.write_txt(direction.get_raw_data())
     print(direction.get_arrival_time())

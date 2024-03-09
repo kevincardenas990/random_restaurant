@@ -9,7 +9,7 @@ from food import Food
 import tkinter as tk
 from tkinter import Checkbutton, ttk, messagebox 
 from constants import PLACES, GENRE, START_PLACE
-from google_maps import Gdirections
+from google_maps import G_Directions
 
 
 WIDTH =20
@@ -87,8 +87,8 @@ class App(Food, tk.Tk,):# Gdirections):
             self.removal_choice,
             tk.Button(self.left_menu_frame, width=WIDTH, font=FONT, command=self.remove_restaurant, text="Remove Restaurant",bg="red",fg="white"),
             # ttk.Separator(self.left_menu_frame),
-            # # tk.Button(self.left_menu_frame, width= WIDTH, font=FONT, command=self.display_google_info, text="Google Display", bg="blue", fg="white"),
-            # # self.goog_time
+            # tk.Button(self.left_menu_frame, width= WIDTH, font=FONT, command=self.display_google_info, text="Google Display", bg="blue", fg="white"),
+            # self.goog_time
         ]
         
 
