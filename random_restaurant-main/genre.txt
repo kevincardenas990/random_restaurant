@@ -1,0 +1,12 @@
+ame:American
+bbq:BBQ
+chi:Chinese
+ind:Indian
+ham:Hamburger
+ita:Italian
+jap:Japanese
+mex:Mexican
+piz:Pizza
+tha:Thai
+koe:Korean
+fus:Fusion
