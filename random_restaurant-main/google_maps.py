@@ -6,8 +6,9 @@ from constants import KEY
 from constants import KEY
 
 class G_Directions():
-    def __init__(self, start=None, end=None) -> None:    
+    def __init__(self, start=None, end=None, mode="driving") -> None:    
         self.gmaps = googlemaps.Client(KEY)
+        self._mode= mode
         self._start = start
         self._end = end
         self.start_time = datetime.now()
@@ -15,15 +16,21 @@ class G_Directions():
 
 
     def get_current_location(self):
-        '''Request Info'''
+        '''Request Info''' 
         pass
 
-    def get_raw_data(self, mode="driving"):
-        print(self._start, self._end)
+    def get_raw_data(self):
+        
+        if isinstance(self._start, tuple):
+            self._start = self.gmaps.reverse_geocode(self._start)[1]["formatted_address"]
+
+        if isinstance(self._end, tuple):
+            self._end = self.gmaps.reverse_geocode(self._end)[1]["formatted_address"]
+
         if self._start is None or self._end is None:
             return None
         
-        data = self.gmaps.directions(self._start, self._end, mode=mode, departure_time=self.start_time)
+        data = self.gmaps.directions(self._start, self._end, mode=self._mode, departure_time=self.start_time)
         if data:
             return data[0]["legs"][0]
         else:
@@ -64,6 +71,5 @@ class G_Directions():
 
 
 if __name__ == "__main__":
-    direction = G_Directions("818 E 500 S American Fork", "1001 Campus Dr Orem")
-    direction.write_txt(direction.get_raw_data())
-    print(direction.get_arrival_time())
+    direction = G_Directions("1001 Campus Dr Orem Ut", (40.3769, -111.7958)).get_arrival_time()
+    print(direction)

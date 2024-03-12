@@ -18,3 +18,9 @@ koe:Ombu
 koe:Yummy's
 ame:Tru Religion
 ame:McD'
+ind:Little India Fine Dining
+ind:Karuwaa Nepali & Indian Cuisine
+ham:The Honey Baked Ham Company
+chi:Chi's Asian Cafe
+mex:La Fountain Mexican Restaurant
+mex:El Molcajete Mexican Restaurant

@@ -10,3 +10,4 @@ piz:Pizza
 tha:Thai
 koe:Korean
 fus:Fusion
+des:Dessert
